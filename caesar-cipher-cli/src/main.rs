@@ -2,7 +2,11 @@
 
 To run:
 
-cargo run --  --message "Off to the bunker. Every person for themselves" --encrypt --shift 10
+cargo run --message "Off to the bunker. Every person for themselves" --encrypt --shift 10 --output-format plain 
+
+OR 
+
+cargo run --message "Off to the bunker. Every person for themselves" --encrypt --shift 10 --output-format hex
 
 To decrypt:
 
@@ -60,7 +64,7 @@ fn main() {
     // Output the ciphertext
     match output_format.as_str() {
         "plain" => println!("{}", output_message),
-        "hex" => println!("{}", output_message.chars().map(|c| format!("{:02X}", c as u8)).collect()),
+        "hex" => println!("{}", output_message.chars().map(|c| format!("{:02X}", c as u8)).collect::<String>()),
         _ => panic!("Unsupported output format"),
     }
 }
