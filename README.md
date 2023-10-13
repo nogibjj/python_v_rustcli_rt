@@ -1,8 +1,6 @@
 ## Caesar cipher tool
 by Titus Robin Arun
 
-![Caesar cipher tool screenshot](https://github.com/titusrobin/rust-data-engineering_rt/assets/143838819/1a4df0eb-08a9-4bdf-bc7e-389a1422199d)
-
 ## Introduction
 
 This tool is used to encrypt and decrypt messages using the Caesar cipher. The Caesar cipher is a simple substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.
@@ -21,6 +19,8 @@ cargo run --message "Hello, world!" --encrypt --shift 10 --output-format hex
 This would output the following ciphertext:
 
 48656C6C6F2C20776F726C6421
+
+![Caesar cipher tool screenshot](https://github.com/titusrobin/rust-data-engineering_rt/assets/143838819/1a4df0eb-08a9-4bdf-bc7e-389a1422199d)
 
 ## Conclusion
 This tool is a simple and easy-to-use way to encrypt and decrypt messages using the Caesar cipher. It can be used for a variety of purposes, such as sending secret messages to friends or securing data from unauthorized access.
