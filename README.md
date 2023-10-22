@@ -1,5 +1,5 @@
 ## Caesar cipher tool
-by Titus Robin Arun
+by Robin Arun
 
 ## Introduction
 
